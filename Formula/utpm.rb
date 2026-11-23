@@ -5,6 +5,11 @@ class Utpm < Formula
   sha256 "141da3a9c265931fcd5594cdd7f60b7bab05e63d6f58dd4fa042fa3ef91fb684"
   license "MIT"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   depends_on "rust" => :build
 
   def install
