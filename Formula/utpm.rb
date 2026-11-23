@@ -10,14 +10,17 @@ class Utpm < Formula
     strategy :github_latest
   end
 
-  bottle do
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "7666092b873b343a504d8d3ab8fe472503ef5dd9698b5a2dbd9f4508b47d07e6"
-  end
-
   depends_on "rust" => :build
 
+  on_linux do
+    depends_on "pkgconf" => :build
+    depends_on "openssl@4"
+  end
+
   def install
+    # Upstream forces `target-cpu=native`, which is not portable in bottles
+    rm ".cargo/config.toml"
+
     system "cargo", "install", *std_cargo_args(path: ".")
 
     # Generate and install shell completions
