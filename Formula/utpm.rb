@@ -1,8 +1,8 @@
 class Utpm < Formula
   desc "Unofficial Typst Package Manager"
   homepage "https://github.com/typst-community/utpm"
-  url "https://github.com/typst-community/utpm/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "141da3a9c265931fcd5594cdd7f60b7bab05e63d6f58dd4fa042fa3ef91fb684"
+  url "https://github.com/typst-community/utpm/archive/refs/tags/v0.4.1.tar.gz"
+  sha256 "c94c495cb2c2d68ef158d6a5d1f1e52475bd14e2ba9382713d121e2b53c9ae7c"
   license "MIT"
 
   livecheck do
