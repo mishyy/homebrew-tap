@@ -11,7 +11,9 @@ on:
     # Every day at 0:20 UTC
     - cron: 20 0 * * *
 
-permissions: {}
+permissions:
+  contents: write
+  pull-requests: write
 
 defaults:
   run:
