@@ -2,7 +2,7 @@ class Utpm < Formula
   desc "Unofficial Typst Package Manager"
   homepage "https://github.com/typst-community/utpm"
   url "https://github.com/typst-community/utpm/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "SKIP"
+  sha256 "141da3a9c265931fcd5594cdd7f60b7bab05e63d6f58dd4fa042fa3ef91fb684"
   license "MIT"
 
   depends_on "rust" => :build
