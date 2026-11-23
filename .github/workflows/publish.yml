@@ -62,4 +62,4 @@ jobs:
       - name: Push commits
         uses: Homebrew/actions/git-try-push@61b401267256bb9c047d6d1481b176d5772a0ba7 # 2026.11.23.1
         with:
-          branch: main
+          branch: trunk
