@@ -10,6 +10,13 @@ class Utpm < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/mishyy/homebrew-tap/releases/download/utpm-0.4.1"
+    rebuild 2
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "0ef97ac4fae8804f068de6773ab16a7e44917004b1e117bd56722d569a702e55"
+    sha256 cellar: :any,                 x86_64_linux: "df5f1c7e507a9024df313cc60854b62fb981cb720a08750c64a77be25277c245"
+  end
+
   depends_on "rust" => :build
 
   on_linux do
